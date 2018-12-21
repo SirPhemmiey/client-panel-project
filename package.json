@@ -2,9 +2,11 @@
   "name": "client-panel-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sirphemmiey.github.io/client-panel-project",
   "dependencies": {
     "classnames": "^2.2.6",
     "firebase": "^5.7.0",
+    "gh-pages": "^2.0.1",
     "history": "^4.7.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
@@ -17,6 +19,8 @@
     "redux-firestore": "^0.6.0"
   },
   "scripts": {
+    "olddeploy": "yarn run build&&gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
